@@ -1,0 +1,34 @@
+  <div class="panel panel-primary">
+      <div class="panel-heading">
+       Add user
+      </div>
+      <div class="panel-body">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label class="control-label col-md-2">First Name:</label>
+            <div class="col-md-10">
+             <input name="firstName" [(ngModel)]="user.firstName" required class="form-control">            
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Last Name:</label>
+            <div class="col-md-10">
+              <input name="lastName" [(ngModel)]="user.lastName" required class="form-control">              
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Employee ID:</label>
+            <div class="col-md-10">
+              <input  name="empid" [(ngModel)]="user.employeeId" required class="form-control">               
+            </div>            
+          </div>
+          <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+              <button type="submit" class="btn btn-default" (click)="list()">Add</button>
+            </div>            
+          </div>
+        </form>
+      </div>
+      <div>
+      
+      </div>
